@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pupu IT's Personal Webpage</title>
+    <title>Raditya's Personal Webpage</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5;
+            background-color: #ffcaca;
             color: #333;
             margin: 0;
             padding: 0;
@@ -16,7 +16,7 @@
         header {
             position: fixed;
             width: 100%;
-            background-color: #dce8d6; /* Warna dari palet */
+            background-color: #ffcaca; /* Warna dari palet */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
@@ -34,11 +34,11 @@
             transition: color 0.3s;
         }
         header nav a:hover {
-            color: #ff99aa;
+            color: #ffcaca;
         }
         .hero {
             height: 100vh;
-            background: url('hero-background.jpg') center/cover no-repeat;
+            background: url('https://private-user-images.githubusercontent.com/137570361/365013132-d9d6d86c-d074-4eca-92b5-5073d9fb0609.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjU1OTI1NTEsIm5iZiI6MTcyNTU5MjI1MSwicGF0aCI6Ii8xMzc1NzAzNjEvMzY1MDEzMTMyLWQ5ZDZkODZjLWQwNzQtNGVjYS05MmI1LTUwNzNkOWZiMDYwOS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwOTA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDkwNlQwMzEwNTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YzAyOTAxYzk3NGQ1ODFkZjI4ZGE4MDg0YzNiZjY3NzJlMWQ3NmQ0MTBiOWJhMmFmMmM4OWMwYzYxODI5YmEyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-0ChqWk6Sj55bZ4-YtRLE7Q-Li8XIqERzPljd9X4g2I') center/cover no-repeat; /* Pindahkan background image ke sini */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -59,6 +59,8 @@
         .hero-content {
             position: relative;
             z-index: 2;
+            padding: 20px; /* Tambahkan padding agar teks tidak terlalu menempel pada tepi */
+            border-radius: 10px; /* Opsional: Tambahkan border-radius untuk sudut yang lebih halus */
         }
         .hero h1 {
             font-size: 4em;
@@ -66,12 +68,24 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 700; /* Bobot font lebih tebal */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks */
+            animation: fadeIn 2s ease-in-out; /* Tambahkan animasi */
         }
         .hero p {
             font-size: 1.5em;
             font-weight: 400; /* Bobot font lebih tebal */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks */
             margin-top: 10px;
+            animation: fadeIn 3s ease-in-out; /* Tambahkan animasi */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         section {
             padding: 50px 20px;
@@ -79,7 +93,7 @@
             margin: 0 auto;
         }
         section#about {
-            background-color: #c1d7d3; /* Warna dari palet */
+            background-color: #ffcaca; /* Warna dari palet */
             text-align: center;
         }
         section#about img {
@@ -89,7 +103,7 @@
             margin-bottom: 20px;
         }
         section#portfolio {
-            background-color: #8faacb; /* Warna dari palet */
+            background-color: #ffcaca; /* Warna dari palet */
         }
         h2 {
             font-size: 2em;
@@ -118,7 +132,7 @@
             transform: scale(1.05);
         }
         footer {
-            background-color: #6b5b9e; /* Warna dari palet */
+            background-color: #ffcaca; /* Warna dari palet */
             color: white;
             text-align: center;
             padding: 20px;
@@ -139,7 +153,7 @@
             transition: color 0.3s;
         }
         footer .social-icons a:hover {
-            color: #ff99aa;
+            color: #ffcaca;
         }
     </style>
 </head>
@@ -147,7 +161,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#">Pupu IT</a>
+                <a href="#">Raditya Hardian</a>
             </div>
             <div class="menu">
                 <a href="#about">About Me</a>
@@ -157,14 +171,14 @@
     </header>
     <div class="hero">
         <div class="hero-content">
-            <h1>Pupu IT</h1>
-            <p>Digital Enthusiast & Innovator</p>
+            <h1>Raditya Hardian</h1>
+            <p>IT Developer</p>
         </div>
     </div>
     <section id="about">
-        <img src="profile.jpg" alt="Pupu IT">
+        <img src="https://github.com/user-attachments/assets/581fe593-3ea9-415b-a0f6-68c0ba233d58" alt="Raditya Hardian">
         <h2>About Me</h2>
-        <p>Hi, I'm Pupu IT. I am passionate about technology and love to work on innovative projects. This is a brief bio about me, where I share my background, interests, and what drives me in my professional journey.</p>
+        <p>Raditya Hardian Santoso (18), preferably Radit, is an undergraduate student of Information Technology student at Institut Teknologi Sepuluh Nopember. Have big interest in IT and interest at socializing, anything related with Front End, Pubdok Division, and other field that anything I could dive to.</p>
     </section>
     <section id="portfolio">
         <h2>Portfolio</h2>
@@ -176,7 +190,7 @@
         </ul>
     </section>
     <footer>
-        <p>&copy; 2024 Pupu IT. All rights reserved.</p>
+        <p>&copy; 2024 Raditya Hardian. All rights reserved.</p>
         <div class="social-icons">
             <a href="https://twitter.com/pupuit" target="_blank">Twitter</a>
             <a href="https://linkedin.com/in/pupuit" target="_blank">LinkedIn</a>
